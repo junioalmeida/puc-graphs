@@ -30,15 +30,20 @@ public class UI {
 		System.out.printf(format, args);
 	}
 	
-	public static void print(Object obj) {
+	public static void println(Object obj) {
 		System.out.println(obj);
 	}
 
-	public static void printTextWithoutNewLine(Object obj) {
+	public static void print(Object obj) {
 		System.out.print(obj);
 	}
 
 	public static void printNewLine() {
 		System.out.println();
+	}
+	
+	public static String readString(String str) {
+		print(str);
+		return keyboard.nextLine();
 	}
 }
