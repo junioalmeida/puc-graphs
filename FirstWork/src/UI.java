@@ -5,7 +5,7 @@ public class UI {
 	private static Scanner keyboard = new Scanner(System.in);
 	
 	public static int menu() {
-		System.out.println("\nMenu de opções");
+		System.out.println("\nMenu de opções:");
         System.out.println("1 - Inserir vértice");
         System.out.println("2 - Remover vértice");
         System.out.println("3 - Inserir aresta");
@@ -45,5 +45,10 @@ public class UI {
 	public static String readString(String str) {
 		print(str);
 		return keyboard.nextLine();
+	}
+	
+	public static int readInt(String str) {
+		print(str);
+		return Integer.parseInt(keyboard.nextLine());
 	}
 }
