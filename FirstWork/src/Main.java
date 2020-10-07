@@ -58,9 +58,9 @@ public class Main {
 						vf = UI.readString("Vértice final: ");
 	
 						if (graph.edgeExists(vi, vf)) {
-							UI.printf("Os vértices %d e %d são adjacentes.", vi, vf);
+							UI.printf("Os vértices %s e %s são adjacentes.", vi, vf);
 						} else {
-							UI.printf("Os vértices %d e %d não são adjacentes.", vi, vf);
+							UI.printf("Os vértices %s e %s não são adjacentes.", vi, vf);
 						}
 					}
 	
